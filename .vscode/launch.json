@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug swift_codespace",
+            "program": "${workspaceFolder:swift_codespace}/.build/debug/swift_codespace",
+            "args": [],
+            "cwd": "${workspaceFolder:swift_codespace}",
+            "preLaunchTask": "swift: Build Debug swift_codespace"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release swift_codespace",
+            "program": "${workspaceFolder:swift_codespace}/.build/release/swift_codespace",
+            "args": [],
+            "cwd": "${workspaceFolder:swift_codespace}",
+            "preLaunchTask": "swift: Build Release swift_codespace"
+        }
+    ]
+}
